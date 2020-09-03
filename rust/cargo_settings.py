@@ -135,7 +135,7 @@ class CargoSettings(object):
         if self.project_data is None:
             # Window does not have a Sublime project.
             self.project_data = {}
-        self.re_settings = sublime.load_settings('RustEnhanced.sublime-settings')
+        self.re_settings = sublime.load_settings('LionsEnhanced.sublime-settings')
 
     def get_global_default(self, key, default=None):
         internal_default = CARGO_BUILD_DEFAULTS.get('defaults', {})\
@@ -148,7 +148,7 @@ class CargoSettings(object):
         cb = self.re_settings.get('cargo_build', {})
         cb.setdefault('defaults', {})[key] = value
         self.re_settings.set('cargo_build', cb)
-        sublime.save_settings('RustEnhanced.sublime-settings')
+        sublime.save_settings('LionsEnhanced.sublime-settings')
 
     def get_project_default(self, key, default=None):
         return self.project_data.get('settings', {})\
@@ -176,7 +176,7 @@ class CargoSettings(object):
         cb.setdefault('variants', {})\
           .setdefault(variant, {})[key] = value
         self.re_settings.set('cargo_build', cb)
-        sublime.save_settings('RustEnhanced.sublime-settings')
+        sublime.save_settings('LionsEnhanced.sublime-settings')
 
     def get_project_variant(self, variant, key, default=None):
         return self.project_data.get('settings', {})\

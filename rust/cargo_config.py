@@ -297,7 +297,7 @@ class CargoConfigBase(sublime_plugin.WindowCommand):
         result = []
         if not self.which_requires_package:
             result.extend([
-                (['Set %s globally.', 'Updates RustEnhanced.sublime-settings'],
+                (['Set %s globally.', 'Updates LionsEnhanced.sublime-settings'],
                     'global_default'),
                 (['Set %s in this Sublime project.', ''],
                     'project_default'),
@@ -946,5 +946,5 @@ class CargoCreateNewBuild(CargoConfigBase):
 
     def _stock_build_system(self):
         pkg_name = __name__.split('.')[0]
-        resource = 'Packages/%s/RustEnhanced.sublime-build' % pkg_name
+        resource = 'Packages/%s/LionsEnhanced.sublime-build' % pkg_name
         return sublime.decode_value(sublime.load_resource(resource))

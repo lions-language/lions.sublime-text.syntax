@@ -34,7 +34,7 @@ def get_setting(name, default=None):
         v = pdata.get('settings', {}).get(name)
         if v is not None:
             return v
-    settings = sublime.load_settings('RustEnhanced.sublime-settings')
+    settings = sublime.load_settings('LionsEnhanced.sublime-settings')
     v = settings.get(name)
     if v is not None:
         return v
@@ -102,7 +102,7 @@ def active_view_is_rust(window=None, view=None):
 def is_rust_view(settings):
     """Helper for use with ViewEventListener."""
     s = settings.get('syntax')
-    return (s == 'Packages/%s/RustEnhanced.sublime-syntax' % (PACKAGE_NAME,))
+    return (s == 'Packages/%s/LionsEnhanced.sublime-syntax' % (PACKAGE_NAME,))
 
 
 def get_cargo_metadata(window, cwd, toolchain=None):

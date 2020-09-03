@@ -70,9 +70,9 @@ class TestBase(unittest.TestCase):
 
         # Override settings.
         self._original_settings = {}
-        self.settings = sublime.load_settings('RustEnhanced.sublime-settings')
+        self.settings = sublime.load_settings('LionsEnhanced.sublime-settings')
         # Ensure all settings are at defaults.
-        defaults = sublime.load_resource('Packages/%s/RustEnhanced.sublime-settings' % (
+        defaults = sublime.load_resource('Packages/%s/LionsEnhanced.sublime-settings' % (
             util.PACKAGE_NAME,))
         defaults = sublime.decode_value(defaults)
         for key, value in defaults.items():
@@ -220,7 +220,7 @@ class AlteredSetting(object):
     def __init__(self, name, value):
         self.name = name
         self.value = value
-        self.settings = sublime.load_settings('RustEnhanced.sublime-settings')
+        self.settings = sublime.load_settings('LionsEnhanced.sublime-settings')
 
     def __enter__(self):
         self.orig = self.settings.get(self.name)

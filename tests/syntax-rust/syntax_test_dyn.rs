@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/Rust Enhanced/RustEnhanced.sublime-syntax"
+// SYNTAX TEST "Packages/Rust Enhanced/LionsEnhanced.sublime-syntax"
 
 // dyn trait
 fn f(x: dyn T, y: Box<dyn T + 'static>, z: &dyn T,

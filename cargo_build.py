@@ -609,7 +609,7 @@ def plugin_loaded():
                 fname = view.file_name()
                 if fname and fname.endswith('.rs'):
                     view.settings().set('syntax',
-                        'Packages/%s/RustEnhanced.sublime-syntax' % (package_name,))
+                        'Packages/%s/LionsEnhanced.sublime-syntax' % (package_name,))
 
         # Disable the built-in Rust package.
         settings = sublime.load_settings('Preferences.sublime-settings')

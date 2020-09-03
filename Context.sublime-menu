@@ -104,7 +104,7 @@
                 "command": "edit_settings",
                 "args":
                 {
-                    "base_file": "${packages}/lions.sublime-text.syntax/RustEnhanced.sublime-settings",
+                    "base_file": "${packages}/lions.sublime-text.syntax/LionsEnhanced.sublime-settings",
                     "default": "{\n\t$0\n}\n"
                 }
             },
