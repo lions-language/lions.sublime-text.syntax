@@ -1369,7 +1369,7 @@ contexts:
     - match: \b(true|false)\b
       scope: constant.language.rust
 
-    - match: \b(let|const|static)\b
+    - match: \b(let|const|static|var)\b
       scope: storage.type.rust
 
     - match: \bfn\b
