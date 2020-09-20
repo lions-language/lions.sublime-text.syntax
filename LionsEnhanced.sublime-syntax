@@ -427,7 +427,7 @@ contexts:
   type:
     - match: '{{identifier}}(?=<)'
       push: generic-angles
-    - match: \b(Self|{{int_suffixes}}|{{float_suffixes}}|bool|char|str)\b
+    - match: \b(Self|{{int_suffixes}}|{{float_suffixes}}|bool|char|str|string)\b
       scope: storage.type.rust
     # stdsimd types
     - match: |-
