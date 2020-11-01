@@ -1399,7 +1399,7 @@ contexts:
     - match: \b(mut|pub|unsafe|move|ref)\b
       scope: storage.modifier.rust
 
-    - match: \b(crate|extern|use|where)\b
+    - match: \b(crate|extern|use|where|import|relmod)\b
       scope: keyword.other.rust
 
     - match: \b(async|await|else|for|if|loop|match|try|while|yield)\b
