@@ -1396,6 +1396,9 @@ contexts:
     - match: \btrait\b
       scope: storage.type.trait.rust
 
+    - match: \binterface\b
+      scope: storage.type.interface.rust
+
     - match: \b(mut|pub|unsafe|move|ref)\b
       scope: storage.modifier.rust
 
